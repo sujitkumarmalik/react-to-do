@@ -1,0 +1,87 @@
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #0e0d0df0;
+}
+.todo-list {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: rgba(6, 6, 234, 0.815);
+}
+button{
+ 
+  color: pink;
+  font-size: 15px;
+  transition: transform 0.50s;
+
+}
+button:hover{
+ 
+  color:red;
+  font-size: 18px;
+}
+.todo-list input[type="text"] {
+  width: calc(100% - 90px);
+  padding: 8px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.todo-list button {
+  padding: 8px;
+  margin-left: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.todo-list button.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-list button svg {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  stroke: blue;
+  transition: transform top 0.5s;
+}
+
+.todo-list button:hover svg {
+  
+    stroke: red;
+    width: 30px;
+  
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  padding: 8px;
+  margin: 4px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list li.done {
+  text-decoration: line-through;
+  background: #e0ffe0;
+}
